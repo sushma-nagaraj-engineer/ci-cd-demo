@@ -11,7 +11,7 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 
 # Create a simple HTML page
-echo "<html><h1>Hello from EC2 Apache Web Server!</h1></html>" | sudo tee /var/www/html/index.html
+echo "<html><h1>Hi from EC2 Apache Web Server!</h1></html>" | sudo tee /var/www/html/index.html
 
 # Open firewall port if using firewalld (Amazon Linux doesn't use it by default)
 # sudo firewall-cmd --permanent --add-service=http
